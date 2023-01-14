@@ -1,0 +1,4 @@
+# core Packages
+
+declare -a PKGS=( nss
+                  su-exec )
