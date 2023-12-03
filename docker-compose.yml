@@ -12,7 +12,7 @@ services:
                 JSONNET_VERSION: ${JSONNET_VERSION:-11.0.15_p10-r0}
                 K8S_VERSION: ${K8S_VERSION:-1.25}
             cache_from:
-                - ${DOCKER_REGISTRY:-s2.ubuntu.home:5000/}thirdparty/${CONTAINER_OS:-alpine}:${OS_VERSION:-3.18.4}
+                - ${DOCKER_REGISTRY:-s2.ubuntu.home:5000/}thirdparty/${CONTAINER_OS:-alpine}:${OS_VERSION:-3.18.5}
                 - ${DOCKER_REGISTRY:-s2.ubuntu.home:5000/}${CONTAINER_OS:-alpine}/base_container:${BASE_TAG:-latest}
             context: .
             dockerfile: Dockerfile
